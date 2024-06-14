@@ -13,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Escape input untuk keamanan
     $username_or_email = $conn->real_escape_string($username_or_email);
-    $password = $conn->real_escape_string($password);
 
     // Cek apakah input adalah email atau username
     if (filter_var($username_or_email, FILTER_VALIDATE_EMAIL)) {
@@ -32,6 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (password_verify($password, $user['password'])) {
             echo "Login berhasil!";
             // Redirect ke halaman utama atau lakukan tindakan lainnya
+            header('Location: main_page.php'); 
+            exit(); // Hentikan eksekusi skrip setelah redirect
         } else {
             echo "Password salah!";
         }

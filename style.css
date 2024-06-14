@@ -1,0 +1,37 @@
+/* index */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.navbar-dark-mode {
+    background-color: #343a40;
+}
+
+.navbar-light-mode {
+    background-color: #dff0ea;
+}
+
+.navbar-dark-mode .navbar-brand,
+.navbar-dark-mode .nav-link {
+    color: #ffffff;
+}
+
+.text:hover .text{
+    text-decoration: underline;
+    /* Tambahkan garis bawah saat kursor dihover */
+}
+.text{
+    font-size: 18px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Warna latar belakang dengan transparansi */
+    padding: 9px;
+    backdrop-filter: blur(5px);
+}

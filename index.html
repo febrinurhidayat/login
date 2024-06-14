@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light-mode fixed-top">
+        <a class="navbar-brand" href="#" onclick="location.reload()">Salvito</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="text nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="text nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="text nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+            </ul>
+            <button class="btn btn-secondary ml-auto fas" id="toggleDarkMode">
+                <i id="darkModeIcon" class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h1>Halaman Utama</h1>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+        <p>Rekayasa Perangkat lunak</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('toggleDarkMode').addEventListener('click', function () {
+            var body = document.body;
+            var navbar = document.getElementById('navbar');
+            var icon = document.getElementById('darkModeIcon');
+            var homeLink = document.querySelector('.nav-link.home');
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                navbar.classList.remove('navbar-dark-mode');
+                navbar.classList.add('navbar-light-mode');
+                icon.classList.add('fa-moon');
+                document.getElementById('toggleDarkMode').innerHTML = '<i id="darkModeIcon" class="fas fa-moon"></i>';
+            } else {
+                body.classList.add('dark-mode');
+                navbar.classList.remove('navbar-light-mode');
+                navbar.classList.add('navbar-dark-mode');
+                icon.classList.add('fa-sun');
+                document.getElementById('toggleDarkMode').innerHTML = '<i id="darkModeIcon" class="fas fa-sun"></i>';
+            }
+        });
+    </script>
+</body>
+
+</html>
